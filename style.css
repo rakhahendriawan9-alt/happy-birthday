@@ -1,0 +1,230 @@
+/* ==============================
+   GLOBAL STYLE
+================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.container {
+  visibility: hidden;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+/* ==============================
+   PAGE ONE
+================================= */
+.one {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-top: 15vh;
+}
+
+.one span {
+  color: #ff69b4;
+  font-weight: 600;
+}
+
+.two {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #444;
+}
+
+/* ==============================
+   PAGE THREE
+================================= */
+.three {
+  font-size: 2rem;
+  margin-top: 20vh;
+  color: #ff4081;
+  font-weight: bold;
+}
+
+/* ==============================
+   PAGE FOUR (chat box)
+================================= */
+.text-box {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 15vh auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hbd-chatbox {
+  text-align: left;
+  color: #333;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.hbd-chatbox span {
+  visibility: hidden;
+  display: inline-block;
+}
+
+.fake-btn {
+  background: #ff69b4;
+  color: white;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-top: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* ==============================
+   PAGE FIVE (ideas)
+================================= */
+.five p {
+  font-size: 1.4rem;
+  margin-top: 10vh;
+}
+
+.idea-3 strong {
+  background: #ffe4ec;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* ==============================
+   PAGE SIX (photo + wish)
+================================= */
+.six {
+  margin-top: 8vh;
+  position: relative;
+}
+
+.profile-picture {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.hat {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+}
+
+.wish {
+  margin-top: 30px;
+}
+
+.wish-hbd {
+  font-size: 2rem;
+  color: #ff69b4;
+  letter-spacing: 2px;
+}
+
+.wish-hbd span {
+  display: inline-block;
+  opacity: 0;
+}
+
+.wish h5 {
+  font-size: 1rem;
+  color: #444;
+  margin-top: 10px;
+}
+
+/* ==============================
+   PAGE SEVEN (balloons)
+================================= */
+.baloons {
+  position: fixed;
+  left: 0;
+  bottom: -150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.baloons img {
+  width: 60px;
+  opacity: 0;
+}
+
+/* ==============================
+   PAGE EIGHT (circles)
+================================= */
+.eight {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15vh;
+  gap: 10px;
+}
+
+.eight svg {
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  fill: #ff69b4;
+  opacity: 0;
+}
+
+/* ==============================
+   PAGE NINE (ending)
+================================= */
+.nine {
+  margin-top: 20vh;
+}
+
+.nine p {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.last-smile {
+  display: inline-block;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+/* ==============================
+   RESPONSIVE
+================================= */
+@media (max-width: 600px) {
+  .one {
+    font-size: 2rem;
+  }
+
+  .wish-hbd {
+    font-size: 1.6rem;
+  }
+
+  .hbd-chatbox {
+    font-size: 0.9rem;
+  }
+
+  .profile-picture {
+    width: 130px;
+    height: 130px;
+  }
+
+  .hat {
+    width: 90px;
+    top: -30px;
+  }
+}
